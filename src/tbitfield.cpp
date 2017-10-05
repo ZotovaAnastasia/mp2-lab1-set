@@ -11,7 +11,7 @@
 
 TBitField::TBitField(int len)
 {
-	if (len < 0)
+	if (len < 0)//(BitLen=1)
 		throw 1;
 }
 
@@ -42,7 +42,7 @@ int TBitField::GetLength(void) const // получить длину (к-во б�
 
 void TBitField::SetBit(const int n) // установить бит
 {
-	if (n < 0)
+	if (n < 0)||(n>BitLen)
 		throw 2;
 }
 

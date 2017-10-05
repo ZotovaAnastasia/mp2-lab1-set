@@ -8,7 +8,7 @@
 #include "tset.h"
 
 TSet::TSet(int mp) : BitField(mp)
-{
+{ mp=1;
 }
 
 // конструктор копирования
